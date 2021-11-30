@@ -1,0 +1,118 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ressources/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/UI/EndScene.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=41]
+size = 8
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=42]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 8
+font_data = ExtResource( 1 )
+
+[node name="EndScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.956863, 0.705882, 0.105882, 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 12.0
+margin_right = 148.0
+margin_bottom = 90.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AllLevelsDone" type="Label" parent="HBoxContainer/VBoxContainer"]
+margin_left = 4.0
+margin_top = 18.0
+margin_right = 132.0
+margin_bottom = 26.0
+size_flags_horizontal = 4
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 41 )
+text = "All Levels Done!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
+margin_top = 30.0
+margin_right = 136.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 0, 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Feedback" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+margin_top = 39.0
+margin_right = 136.0
+margin_bottom = 47.0
+custom_fonts/font = SubResource( 42 )
+text = "Give me Feedback!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Twitch" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+margin_left = 44.0
+margin_top = 51.0
+margin_right = 92.0
+margin_bottom = 59.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 42 )
+text = "Twitch"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Twitter" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+margin_left = 40.0
+margin_top = 63.0
+margin_right = 96.0
+margin_bottom = 71.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 42 )
+text = "Twitter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="esc" type="Label" parent="."]
+margin_left = 1.0
+margin_right = 25.0
+margin_bottom = 8.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 43 )
+text = "esc"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Feedback" to="." method="_on_Feedback_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Twitch" to="." method="_on_LinkButton_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Twitter" to="." method="_on_Twitter_pressed"]

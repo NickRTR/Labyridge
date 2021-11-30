@@ -1,0 +1,259 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Ressources/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/UI/Button Rectangle1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Button Rectangle2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/UI/Levels.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 8
+font_data = ExtResource( 1 )
+
+[node name="Levels" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.956863, 0.705882, 0.105882, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Row1" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 16.0
+margin_right = 160.0
+margin_bottom = 43.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1" type="TextureButton" parent="VBoxContainer/Row1"]
+margin_left = 24.0
+margin_right = 49.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row1/Level1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="TextureButton" parent="VBoxContainer/Row1"]
+margin_left = 53.0
+margin_right = 78.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row1/Level2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="TextureButton" parent="VBoxContainer/Row1"]
+margin_left = 82.0
+margin_right = 107.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row1/Level3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="TextureButton" parent="VBoxContainer/Row1"]
+margin_left = 111.0
+margin_right = 136.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row1/Level4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Row2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 47.0
+margin_right = 160.0
+margin_bottom = 74.0
+alignment = 1
+
+[node name="Level5" type="TextureButton" parent="VBoxContainer/Row2"]
+margin_left = 24.0
+margin_right = 49.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row2/Level5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level6" type="TextureButton" parent="VBoxContainer/Row2"]
+margin_left = 53.0
+margin_right = 78.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row2/Level6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level7" type="TextureButton" parent="VBoxContainer/Row2"]
+margin_left = 82.0
+margin_right = 107.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row2/Level7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "7"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level8" type="TextureButton" parent="VBoxContainer/Row2"]
+margin_left = 111.0
+margin_right = 136.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 25, 27 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="VBoxContainer/Row2/Level8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.0
+size_flags_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "8"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="esc" type="Label" parent="."]
+margin_left = 1.0
+margin_right = 25.0
+margin_bottom = 8.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 2 )
+text = "esc"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxContainer/Row1/Level1" to="." method="_on_Level1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row1/Level2" to="." method="_on_Level2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row1/Level3" to="." method="_on_Level3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row1/Level4" to="." method="_on_Level4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row2/Level5" to="." method="_on_Level5_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row2/Level6" to="." method="_on_Level6_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row2/Level7" to="." method="_on_Level7_pressed"]
+[connection signal="pressed" from="VBoxContainer/Row2/Level8" to="." method="_on_Level8_pressed"]
