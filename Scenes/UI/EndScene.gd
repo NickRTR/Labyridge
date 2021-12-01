@@ -1,6 +1,5 @@
 extends Control
 
-
 func _on_LinkButton_pressed():
 	OS.shell_open("https://www.twitch.tv/nickrtr")
 
